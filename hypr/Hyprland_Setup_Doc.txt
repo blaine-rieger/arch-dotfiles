@@ -1,0 +1,24 @@
+Install NvChad 
+  - go to chadrc.lua and add "transparency = true," - located ~/.config/nvim/lua/chadrc.lua
+  - you can also modify the theme there 
+
+Instlal pywal16 
+  - colors are stored in ~/.cache/wal/
+  - there you have the colors for kitty and any other app that uses color formatting 
+  - go to ~/.config/kitty/kitty.conf and add "include /home/blainerieger/.cache/wal/colors-kitty.conf"
+    - this will apply theme to kitty 
+
+If drivers become an issue and are defaulting to nouveau then 
+  - go to the mktcpio file and look for any weird characters at end of file 
+  - removing this allows for nvidia drivers to load on boot bypassing nouveua 
+
+Dolphin File Association Fix
+  - https://github.com/n4zz/Fix-Dolphin-File-Associations - use this to fix pdf etc for files not opening up in dolphin 
+  - Run kbuildsycoca6 every time you change menu or .desktop files. The github link has good info.
+
+Modify Wallpaper 
+  - Go to hyprpaper.config and change wallpaper path 
+  - run wal -i "path-to-wallpaper"
+  - kill and rerun hyprpaper 
+
+
